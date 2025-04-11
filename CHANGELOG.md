@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Move focus request out of `requestKeyboard` to avoid focus ping pong between editors.
+
 ## [11.5.1] - 2026-05-20
 
 ### Added
@@ -64,11 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Can't select text when `readOnly` is true [#2529](https://github.com/singerdmx/flutter-quill/pull/2529).
-
-### Added
-
-- Display magnifier using `RawMagnifier` widget when dragging on iOS/Android [#2529](https://github.com/singerdmx/flutter-quill/pull/2529).
+ - Move focus request out of requestKeyboard to avoid focus ping pong between editors.
 
 ## [11.2.0] - 2025-03-26
 
