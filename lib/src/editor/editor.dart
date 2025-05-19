@@ -433,7 +433,17 @@ class QuillEditorState extends State<QuillEditor>
         'To request keyboard the editor key must not be null',
       );
     }
-    editorCurrentState.requestKeyboard();
+    if (widget.focusNode.hasFocus) {
+      try {
+        editorCurrentState.requestKeyboard();
+      } catch (e) {
+        if (mounted) {
+          return;
+        }
+      }
+    } else {
+      widget.focusNode.requestFocus();
+    }
   }
 }
 
