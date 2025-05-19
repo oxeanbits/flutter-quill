@@ -36,7 +36,10 @@ dependencies:
   web: ">=0.5.0 <2.0.0"
   path: ^1.8.0
 
-  flutter_quill: ^11.0.0
+  flutter_quill:
+    git:
+      url: https://github.com/oxeanbits/flutter-quill.git
+      ref: cce5366d88d655d6d82bd17816f2a484ad3d2e45
   photo_view: ^0.15.0
 
   # Plugins
